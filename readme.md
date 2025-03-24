@@ -1,174 +1,119 @@
-# Boilerplate Bootstrap Vanilla
-Simple boilerplate project to get started with Bootstrap.
+# Bootstrap Exercises
+This repo contains a collection of exercises to practice working with Bootstrap.  
+The exercises are based on existing templates, so you can get experience navigating real code, making changes,
+and adding new features.
 
-By Vanilla I mean this is basic html/css/javascript, without requiring any build steps to run the project.
+## Exercises
 
+### Portfolio
 
-## Explanations
+<details>
+<summary>#1 Change dummy dropdown to "Projects"</summary>
 
-```html
-<html lang="en">
-```
-Update the `lang` attribute on the `html` tag, to match the content language.
+The dummy item **"Dropdown"** in the main menu should be renamed to **"Projects"**.  
+Update the dropdown contents to match the structure below.  
+The text in parentheses shows the link each item should point to.
 
-`en` for English, and `da` for Danish.
+  - Projects (projects.html)
+    - Web Design (projects/web-design.html)
+    - Branding (projects/branding.html)
+    - Game Development (projects/game-development.html)
+      - Unity (projects/unity-projects.html)
+      - Game Jams (projects/game-jams.html)
+      - Browser Games (projects/browser-games.html)
+    - 3D & Motion (projects/3d-and-motion.html)
+      - 3D Modeling (projects/3d-modeling.html)
+      - Animations (projects/animations.html)
 
-Here is a list of language codes: https://gist.github.com/JamieMason/3748498
+> [!TIP]
+> Just change in the `index.html`, no need to copy-paste to all the files for this exercise.
+</details>
 
----
+<details>
+<summary>#2 Change testimonials on about page to be cards</summary>
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
-This viewpoint meta tag, helps the site scale as expected on all devices.
+On the `about.html` page, update the testimonials section to use Bootstrap cards.  
+Use the content that’s already there, but fit it into the structure of the card component.
 
----
+You can start with the example here:  
+https://getbootstrap.com/docs/5.3/components/card/#example
 
-```html
-<script src="js/script.js" defer></script>
-```
-If scripts are included in the `head`, make sure to add `defer` to let the DOM
-finish loading before running the javascript.
+> [!TIP]
+> To center a card, the utility class `m-auto` is often enough.
+</details>
 
-Inline scripts (`<script></script>`), can not be deferred. So that needs to be
-placed at the end of the `body` tag.
+<details>
+<summary>#3 Add badges to services</summary>
 
----
+On the `services.html` page, add badges to two service cards:
+- A green badge labeled `Popular`
+- A blue badge labeled `New`
 
-```html
-<body class="min-vh-100 overflow-y-scroll d-flex flex-column">
-```
-- `min-vh-100`: Make sure the body can not get smaller than filling the screen height.
-- `overflow-y-scroll`: Make sure the scrollbar is always visible, to avoid the content jumping when it show up.
-- `d-flex flex-column`: Make the whole page use flexbox, in the column direction. Makes `nav`, `main` and `footer` stack vertically.
-
----
-
-```html
-<main class="flex-grow-1">
-```
-- `flex-grow-1`: Let the main content grow to fit the minimum height of the parent flexbox.
-
----
-
-## Quick start
-
-### Header
-
-Default content of the header section.
-```html
-<header>
-    <!-- Your navigation could live here, or you can delete the header tag -->
-</header>
-```
+The badges should be placed in the top-right corner inside the service card.  
+Use Bootstrap's badge component and positioning utilities to make it work.
+</details>
 
 ---
 
-Basic navbar, you can insert in the `header` tag.
-This is set to dark mode, you can use light mode by removing `data-bs-theme="dark"`.
-```html
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-        <a
-            class="navbar-brand"
-            href="#"
-        >
-            Template
-        </a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-            id="navbarNav"
-            class="collapse navbar-collapse"
-        >
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a
-                        class="nav-link active"
-                        href="#"
-                        aria-current="page"
-                    >
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="#"
-                    >
-                        Features
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="#"
-                    >
-                        Pricing
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="#"
-                    >
-                        About us
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-```
+### Admin
 
-### Main
+<details>
+<summary>#4 Add accordion instead of "Daily Sales" and "Users online"</summary>
 
-Default content of the main section.
-```html
-<main class="flex-grow-1">
-    <section class="container mt-4">
-        <h1>Bootstrap Template Vanilla</h1>
-        <p>
-            This is a template to getting started building a webapp using Bootstrap.
-        </p>
-    </section>
-</main>
-```
+On the `index.html` page, replace the "Daily Sales" and "Users Online" widgets with a Bootstrap accordion.  
+The accordion should have the following 6 sections, and the first one should be open by default:
+
+- Getting Started
+- Managing Users
+- Understanding Analytics
+- Customizing the Dashboard
+- Security & Access Control
+- FAQs & Troubleshooting
+
+> [!TIP]
+> You can use the default accordion content from the documentation - just change the headings.
+</details>
+
+<details>
+<summary>#5 Add import button in "User Statistics"</summary>
+
+In the "User Statistics" section of `index.html`, add a new button to the left of the existing **Export** button.  
+The new button should say **Import**.
+
+Replace the current icons with Font Awesome icons:
+- `fa-upload` for the Import button
+- `fa-download` for the Export button
+</details>
+
+<details>
+<summary>#6 Add upgrade modal when clicking "Add Customer"</summary>
+
+On the `index.html` page, clicking the **Add Customer** button should open a modal popup asking the user to upgrade.
+
+The modal should include:
+- A title: **Upgrade now**
+- Body text: *This feature requires you to upgrade to a Pro version.*
+- A **Close** button (secondary style)
+- An **Upgrade** button (success style)
+- The modal should be vertically centered
+</details>
+
+<details>
+<summary>#7 Add progress bar</summary>
+
+On the `index.html` page, just above the "User Statistics" widget, add a new row with a Bootstrap progress bar.
+
+- The progress should be at **85%**
+- Use a **yellow** color with **animated stripes**
+
+> [!TIP]
+> Use Bootstrap's spacing utilities to add margin under the new row.
+</details>
 
 ---
 
-Starting point for having a large hero section at the start of the page.
-```html
-<main class="flex-grow-1">
-    <section
-        class="ratio ratio-16x9"
-        style="
-            background-image: url('https://picsum.photos/1920/1080/?grayscale&blur=4');
-            background-size: cover;
-            background-position: center;
-        "
-    >
-        <div class="p-5 text-white">
-            <h1 class="display-1">Welcome</h1>
-            <div class="display-5">
-                You can have a pretty header here
-            </div>
-        </div>
-    </section>
-    <section class="container mt-4">
-        <h1>Bootstrap Template Vanilla</h1>
-        <p>
-            This is a template to getting started building a webapp using Bootstrap.
-        </p>
-    </section>
-</main>
-```
+## Links
+
+Find more templates:  
+- https://startbootstrap.com/?showPro=false
+- https://themewagon.com/theme-framework/bootstrap-5/?pa_price=free
