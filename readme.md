@@ -27,6 +27,7 @@ The text in parentheses shows the link each item should point to.
 
 > [!TIP]
 > Just change in the `index.html`, no need to copy-paste to all the files for this exercise.
+
 </details>
 
 <details>
@@ -40,6 +41,7 @@ https://getbootstrap.com/docs/5.3/components/card/#example
 
 > [!TIP]
 > To center a card, the utility class `m-auto` is often enough.
+
 </details>
 
 <details>
@@ -72,6 +74,7 @@ The accordion should have the following 6 sections, and the first one should be 
 
 > [!TIP]
 > You can use the default accordion content from the documentation - just change the headings.
+
 </details>
 
 <details>
@@ -108,6 +111,7 @@ On the `index.html` page, just above the "User Statistics" widget, add a new row
 
 > [!TIP]
 > Use Bootstrap's spacing utilities to add margin under the new row.
+
 </details>
 
 ---
