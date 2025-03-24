@@ -6,6 +6,7 @@ and adding new features.
 ## Exercises
 
 ### Portfolio
+Solve these exercises on the template in the `portfolio` folder.
 
 <details>
 <summary>#1 Change dummy dropdown to "Projects"</summary>
@@ -58,6 +59,7 @@ Use Bootstrap's badge component and positioning utilities to make it work.
 ---
 
 ### Admin
+Solve these exercises on the template in the `admin` folder.
 
 <details>
 <summary>#4 Add accordion instead of "Daily Sales" and "Users online"</summary>
@@ -111,6 +113,33 @@ On the `index.html` page, just above the "User Statistics" widget, add a new row
 
 > [!TIP]
 > Use Bootstrap's spacing utilities to add margin under the new row.
+
+</details>
+
+---
+
+### Build your own
+Solve this exercise in the `index.html` file in this folder.
+
+<details>
+<summary>#8 Use Bootstrap components to build your own</summary>
+
+Pick and use components from the docs and the examples to build out a full page.  
+Don't worry about content, just make a mockup of components you feel fit together.
+
+- https://getbootstrap.com/docs
+- https://getbootstrap.com/docs/5.3/examples/
+
+Ideas for sections:
+- Navigation
+- Hero area
+- Featured
+- Pricing
+- Footer
+
+> [!TIP]
+> If your editor has red lines under something, make sure to hold your mouse
+> over, to see what the error is, and fix the errors before you get more errors.
 
 </details>
 
